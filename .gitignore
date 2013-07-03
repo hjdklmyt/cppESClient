@@ -1,0 +1,6 @@
+*.a
+*/CMakeFiles/*
+*.log
+*.txt
+*.out
+
