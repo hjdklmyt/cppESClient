@@ -121,6 +121,19 @@ testQuery/fast:
 	$(MAKE) -f CMakeFiles/testQuery.dir/build.make CMakeFiles/testQuery.dir/build
 .PHONY : testQuery/fast
 
+#=============================================================================
+# Target rules for targets named testSearch
+
+# Build rule for target.
+testSearch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testSearch
+.PHONY : testSearch
+
+# fast build rule for target.
+testSearch/fast:
+	$(MAKE) -f CMakeFiles/testSearch.dir/build.make CMakeFiles/testSearch.dir/build
+.PHONY : testSearch/fast
+
 home/hth/desktop/project/cplusplus/cppESClient/src/gen-cpp/Rest.o: home/hth/desktop/project/cplusplus/cppESClient/src/gen-cpp/Rest.cpp.o
 .PHONY : home/hth/desktop/project/cplusplus/cppESClient/src/gen-cpp/Rest.o
 
@@ -217,6 +230,30 @@ testQuery.cpp.s:
 	$(MAKE) -f CMakeFiles/testQuery.dir/build.make CMakeFiles/testQuery.dir/testQuery.cpp.s
 .PHONY : testQuery.cpp.s
 
+testSearch.o: testSearch.cpp.o
+.PHONY : testSearch.o
+
+# target to build an object file
+testSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/testSearch.dir/build.make CMakeFiles/testSearch.dir/testSearch.cpp.o
+.PHONY : testSearch.cpp.o
+
+testSearch.i: testSearch.cpp.i
+.PHONY : testSearch.i
+
+# target to preprocess a source file
+testSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/testSearch.dir/build.make CMakeFiles/testSearch.dir/testSearch.cpp.i
+.PHONY : testSearch.cpp.i
+
+testSearch.s: testSearch.cpp.s
+.PHONY : testSearch.s
+
+# target to generate assembly for a file
+testSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/testSearch.dir/build.make CMakeFiles/testSearch.dir/testSearch.cpp.s
+.PHONY : testSearch.cpp.s
+
 testThrift.o: testThrift.cpp.o
 .PHONY : testThrift.o
 
@@ -251,6 +288,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... testQuery"
+	@echo "... testSearch"
 	@echo "... home/hth/desktop/project/cplusplus/cppESClient/src/gen-cpp/Rest.o"
 	@echo "... home/hth/desktop/project/cplusplus/cppESClient/src/gen-cpp/Rest.i"
 	@echo "... home/hth/desktop/project/cplusplus/cppESClient/src/gen-cpp/Rest.s"
@@ -263,6 +301,9 @@ help:
 	@echo "... testQuery.o"
 	@echo "... testQuery.i"
 	@echo "... testQuery.s"
+	@echo "... testSearch.o"
+	@echo "... testSearch.i"
+	@echo "... testSearch.s"
 	@echo "... testThrift.o"
 	@echo "... testThrift.i"
 	@echo "... testThrift.s"

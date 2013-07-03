@@ -276,6 +276,30 @@ gen-cpp/elasticsearch_types.cpp.s:
 	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/gen-cpp/elasticsearch_types.cpp.s
 .PHONY : gen-cpp/elasticsearch_types.cpp.s
 
+search/URIRequest.o: search/URIRequest.cpp.o
+.PHONY : search/URIRequest.o
+
+# target to build an object file
+search/URIRequest.cpp.o:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/URIRequest.cpp.o
+.PHONY : search/URIRequest.cpp.o
+
+search/URIRequest.i: search/URIRequest.cpp.i
+.PHONY : search/URIRequest.i
+
+# target to preprocess a source file
+search/URIRequest.cpp.i:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/URIRequest.cpp.i
+.PHONY : search/URIRequest.cpp.i
+
+search/URIRequest.s: search/URIRequest.cpp.s
+.PHONY : search/URIRequest.s
+
+# target to generate assembly for a file
+search/URIRequest.cpp.s:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/URIRequest.cpp.s
+.PHONY : search/URIRequest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,6 +330,9 @@ help:
 	@echo "... gen-cpp/elasticsearch_types.o"
 	@echo "... gen-cpp/elasticsearch_types.i"
 	@echo "... gen-cpp/elasticsearch_types.s"
+	@echo "... search/URIRequest.o"
+	@echo "... search/URIRequest.i"
+	@echo "... search/URIRequest.s"
 .PHONY : help
 
 
