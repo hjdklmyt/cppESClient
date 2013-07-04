@@ -156,6 +156,30 @@ connection.cpp.s:
 	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/connection.cpp.s
 .PHONY : connection.cpp.s
 
+core/countQuery.o: core/countQuery.cpp.o
+.PHONY : core/countQuery.o
+
+# target to build an object file
+core/countQuery.cpp.o:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/core/countQuery.cpp.o
+.PHONY : core/countQuery.cpp.o
+
+core/countQuery.i: core/countQuery.cpp.i
+.PHONY : core/countQuery.i
+
+# target to preprocess a source file
+core/countQuery.cpp.i:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/core/countQuery.cpp.i
+.PHONY : core/countQuery.cpp.i
+
+core/countQuery.s: core/countQuery.cpp.s
+.PHONY : core/countQuery.s
+
+# target to generate assembly for a file
+core/countQuery.cpp.s:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/core/countQuery.cpp.s
+.PHONY : core/countQuery.cpp.s
+
 core/multiQuery.o: core/multiQuery.cpp.o
 .PHONY : core/multiQuery.o
 
@@ -276,29 +300,29 @@ gen-cpp/elasticsearch_types.cpp.s:
 	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/gen-cpp/elasticsearch_types.cpp.s
 .PHONY : gen-cpp/elasticsearch_types.cpp.s
 
-search/URIRequest.o: search/URIRequest.cpp.o
-.PHONY : search/URIRequest.o
+search/requestPara.o: search/requestPara.cpp.o
+.PHONY : search/requestPara.o
 
 # target to build an object file
-search/URIRequest.cpp.o:
-	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/URIRequest.cpp.o
-.PHONY : search/URIRequest.cpp.o
+search/requestPara.cpp.o:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/requestPara.cpp.o
+.PHONY : search/requestPara.cpp.o
 
-search/URIRequest.i: search/URIRequest.cpp.i
-.PHONY : search/URIRequest.i
+search/requestPara.i: search/requestPara.cpp.i
+.PHONY : search/requestPara.i
 
 # target to preprocess a source file
-search/URIRequest.cpp.i:
-	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/URIRequest.cpp.i
-.PHONY : search/URIRequest.cpp.i
+search/requestPara.cpp.i:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/requestPara.cpp.i
+.PHONY : search/requestPara.cpp.i
 
-search/URIRequest.s: search/URIRequest.cpp.s
-.PHONY : search/URIRequest.s
+search/requestPara.s: search/requestPara.cpp.s
+.PHONY : search/requestPara.s
 
 # target to generate assembly for a file
-search/URIRequest.cpp.s:
-	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/URIRequest.cpp.s
-.PHONY : search/URIRequest.cpp.s
+search/requestPara.cpp.s:
+	$(MAKE) -f CMakeFiles/cppESClient.dir/build.make CMakeFiles/cppESClient.dir/search/requestPara.cpp.s
+.PHONY : search/requestPara.cpp.s
 
 # Help Target
 help:
@@ -315,6 +339,9 @@ help:
 	@echo "... connection.o"
 	@echo "... connection.i"
 	@echo "... connection.s"
+	@echo "... core/countQuery.o"
+	@echo "... core/countQuery.i"
+	@echo "... core/countQuery.s"
 	@echo "... core/multiQuery.o"
 	@echo "... core/multiQuery.i"
 	@echo "... core/multiQuery.s"
@@ -330,9 +357,9 @@ help:
 	@echo "... gen-cpp/elasticsearch_types.o"
 	@echo "... gen-cpp/elasticsearch_types.i"
 	@echo "... gen-cpp/elasticsearch_types.s"
-	@echo "... search/URIRequest.o"
-	@echo "... search/URIRequest.i"
-	@echo "... search/URIRequest.s"
+	@echo "... search/requestPara.o"
+	@echo "... search/requestPara.i"
+	@echo "... search/requestPara.s"
 .PHONY : help
 
 

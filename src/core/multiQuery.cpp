@@ -7,10 +7,6 @@ namespace cppESClient {
         if( type != "" ) uriPrefix += "/"+type;
     }
 
-    void MultiQuery::setQueryData( const std::string &data ) {
-        this->__set_body( data );
-    }
-
     int MultiQuery::multiGet() {
         this->__set_uri( uriPrefix+"/_mget");
     }

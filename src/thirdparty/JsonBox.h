@@ -28,4 +28,8 @@
 #include "JsonBox/Array.h"
 #include "JsonBox/Object.h"
 
+typedef JsonBox::Array   JSONArray;
+typedef JsonBox::Value   JSONValue;
+typedef JsonBox::Object  JSONObject;
+
 #endif

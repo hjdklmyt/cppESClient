@@ -12,7 +12,7 @@
 #include "../src/actionResult.h"
 #include "../src/core/singleQuery.h"
 #include "../src/core/multiQuery.h"
-#include "../src/search/URIRequest.h"
+#include "../src/search/requestPara.h"
 #include <iostream>
 #include <fstream>
 
@@ -40,7 +40,7 @@ void testSearch() {
     Connection conn( "10.21.2.160", 9500 );
     ActionResult result;
     SingleQuery query("test","test");
-    URIRequest uriRequest;
+    RequestPara uriRequest;
     uriRequest.addParameter( Parameters::Q, "fielda:10" );
     uriRequest.addParameter( Parameters::FIELDS, "fielda,fieldb,fieldc,fieldd" );
     uriRequest.addParameter( Parameters::SIZE, 2); 

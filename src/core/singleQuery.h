@@ -30,7 +30,9 @@ namespace cppESClient {
 
         SingleQuery& operator=( const SingleQuery& rhs );
 
-        void setQueryData( const std::string& data );
+        void setQueryData( const std::string& data ) {
+            this->__set_body(data);
+        }
 
         int indexDocByID( const std::string& id, const std::string filter="");
 

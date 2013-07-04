@@ -27,7 +27,9 @@ namespace cppESClient {
 
             MultiQuery& operator=( const MultiQuery& rhs);
 
-            void setQueryData( const std::string& data );
+            void setQueryData( const std::string& data ) {
+                this->__set_body(data);
+            }
 
             int multiGet();
 

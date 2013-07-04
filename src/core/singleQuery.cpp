@@ -25,10 +25,6 @@ namespace cppESClient {
         return *this;
     }
 
-    void SingleQuery::setQueryData( const std::string& data ) {
-        this->__set_body( data );
-    }
-
     int SingleQuery::indexDocByID( const std::string& id, const std::string filter ) {
         if( filter == "" ) this->__set_uri( uriPrefix + "/" + id );
         else this->__set_uri( uriPrefix+"/"+id+"?"+filter );

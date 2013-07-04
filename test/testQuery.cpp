@@ -12,6 +12,7 @@
 #include "../src/actionResult.h"
 #include "../src/core/singleQuery.h"
 #include "../src/core/multiQuery.h"
+#include "../src/core/countQuery.h"
 #include <iostream>
 #include <fstream>
 
@@ -128,12 +129,29 @@ void testIndexQueries( char *filename, int recordCount) {
     infile.close();
 }
 
+void testCountQuery() {
+    Connection conn( "10.21.2.160", 9500 );
+    ActionResult result;
+    CountQuery query;
+    query.addIndex( "test" );
+    query.addType( "test" );
+    query.setRequestPara( "q=fielda:10" );
+
+    cout<<"Sending ..." <<endl;
+    conn.execute( query, result );
+    cout<<"status: "<<result.getResultStatusName()<<endl;
+    cout<<"Response: "<<result.getResponse().body<<endl;
+    cout<<"OK: "<<result.getFieldValue("ok");
+    cout<<"_id: "<<result.getFieldValue("_id");
+}
+
 int main( int argc, char **argv ) {
 
     char filename[128];
     int  recordCount = 0;
     parseParameters( argc, argv, filename, recordCount );
 
+    testCountQuery();
     testIndexQueries( filename, recordCount );
     //testBulkQueries( filename, recordCount );
     return 0;
